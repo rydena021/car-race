@@ -1,0 +1,59 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+/* Your board style here */
+#playground {
+  margin: auto;
+}
+
+#playground td {
+  height: 80px;
+  width: 80px;
+  border: 1px dashed yellow;
+}
+
+td {
+  background-size: 80px;
+  background-repeat: no-repeat;
+}
+
+tr.player1 td.active {
+  background-image: url(images/red_car.png);
+}
+
+tr.player2 td.active {
+  background-image: url(images/blue_car.png);
+}
+
+td:last-child {
+  background-image: url(images/finish.png);
+  background-position: 0 0;
+}
+
+td:last-child.active {
+  background-position: 0 20px, 0 0;
+}
+
+tr.player1 td:last-child.active {
+  background-image: url('images/dobby.png');
+  background-position: 0 0;
+}
+
+tr.player2 td:last-child.active {
+  background-image: url(images/gollum.png);
+  background-position: 0 0;
+}
+
+
+#panel, #flip {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
